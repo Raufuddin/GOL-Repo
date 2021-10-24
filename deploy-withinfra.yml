@@ -21,7 +21,7 @@
       instance_type: t2.micro
       key_name: raufuddin-knr-aws
       image: ami-067b90452b98edd05
-      region: us-east-2
+      region: ap-south-1
       group: launch-wizard-25
       count: 1
       wait: yes
@@ -29,7 +29,7 @@
       instance_tags: 
             name: webserver
       assign_public_ip: yes
-      vpc_subnet_id: subnet-26c7f36a
+      vpc_subnet_id: subnet-f3827c98
     register: ec2  
   - name: Add Instance IP into in-memory inventory file not into hosts file
     add_host: 
